@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+
+button {
+  width: 10vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Animation for all header text on load in. */
+h1, h2, h3, h4, h5, h6, p, a, button, img {
+  animation: fadeInAnimation ease-in-out 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  } 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
+  background-color: #2e2e2e;
+  color: white;
+  height: 100vh;
+}
+
+.HomepageItems {
+  background-color: #0e0e0e;
+}
+
+
+#titleCard {
+  background-image: url('./Media/backdrop_texture.jpg');
+  width: 100%;
+  background-position-x: 80%;
+  background-position-y: 10%;
+  padding: 6vh 12vw 2vh 12vw;
+}
+
+#titleCard h1 {
+  font-size: 72pt;
+  filter: drop-shadow(0 1.5mm 1mm black);
+}
+
+#titleCard h2 {
+  text-align: left;
+  color: lightgray;
+  filter: drop-shadow(0 1.5mm 1mm black);
+}
+
+#aboutMe {
+  background-color: black;
+  padding: 2vh 12vh 2vh 12vw;
+}
+
+#aboutMe h3 {
+  font-style: italic;
+  color: lightgray;
+}
+
+/* Fuck you I hate web design so fucking much. */
+
+/* ReusableComponents Folder styling */
+#developerLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+#developerLinks img {
+  height: 20pt;
+}
+
+#developerLinks button {
+  margin-left: 8pt;
+  filter: drop-shadow(0 1.5mm 1mm black);
+}
+
+
+#developerLinks h4 {
+  font-size: 20pt;
+}
+
+#developerLinks div:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+#skills {
+  padding: 2vh 12vw 2vh 16vw;
+}
+
+#skills h2 {
+  border-bottom: 3px solid blue;
+  font-size: 30pt;
+}
+
+#skills h3 {
+  padding-left: 2vw;
+}
+
+.itemsBoxList {
+  background-color: #2e2e2e;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  border-radius: 12px;
+}
+
+.itemBox {
+  flex: 1;
+  border-radius: 12px;
+  background-color: white;
+  padding: 12pt 12pt 12pt 12pt;
+  margin: 1vh 0.5vw 1vh 0.5vw;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+}
+
+
+
+.itemBox:hover {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.itemsBoxList h4 {
+  font-style: italic;
+  padding: 0.25vh 1vw 0.5vh 1vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.itemBox img {
+  width: 100px;
 }
