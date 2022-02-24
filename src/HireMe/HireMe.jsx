@@ -63,7 +63,7 @@ export default function HireMe() {
                     </section>
                 </div>
                 <div className='workContainer'>
-                    <img src={angelaLogo} id='angela'></img>
+                    <img src={angelaLogo} alt="Angela Women's Safety App" id='angela'></img>
                     <section>
                         <h2>
                             Angela Women's Safety App
