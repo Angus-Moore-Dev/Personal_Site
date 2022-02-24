@@ -14,7 +14,7 @@ export default function DeveloperLinks() {
                 window.open('https://www.linkedin.com/in/angus-moore-103b0a221/');
             })}><img src={linkedIn} alt="LinkedIn"></img></button>
             <Link to="/HireMe">
-            <button type="button" class="btn btn-primary btn-lg"><h4>Hire me!</h4></button>
+            <button type="button" class="btn btn-warning btn-lg"><h4>Hire me!</h4></button>
             </Link>
         </div>
     )

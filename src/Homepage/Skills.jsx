@@ -8,19 +8,20 @@ import Rust from '../Media/Rust.png';
 import Node from '../Media/nodejs.svg';
 import SQL from '../Media/mysql.svg';
 import MongoDB from '../Media/mongodb.svg';
-
 import Docker from '../Media/docker.png';
 import AWS from '../Media/aws.png';
 import Azure from '../Media/Azure.png';
 import GitHub from '../Media/GitHub-logo.png';
+
 export default function Skills() {
     return (
         <div id='skills'>
             <h2>Skills</h2>
-            <h3>Programming Languages</h3>
+            <h3>Programming Languages / Frameworks</h3>
             <div className='itemsBoxList'>
                 <div className="itemBox">
                     <img src={java} alt="Java"></img>
+                    Java / Spring Boot
                 </div>
                 <div className="itemBox">
                     <img src={Node} alt="Node.js"></img>
@@ -46,12 +47,15 @@ export default function Skills() {
                 </div>
                 <div className="itemBox">
                     <img src={c} alt="C Programming Language"></img>
+                    C
                 </div>
                 <div className="itemBox">
                     <img src={cpp} alt="C++"></img>
+                    C++
                 </div>
                 <div className="itemBox">
                     <img src={SQL} alt="SQL"></img>
+                    SQL
                 </div>
                 <div className="itemBox">
                     <img src={MongoDB} alt="MongoDB"></img>
@@ -62,6 +66,7 @@ export default function Skills() {
             <div className='itemsBoxList'>
                 <div className='itemBox'>
                     <img src={Docker} alt="Docker"></img>
+                    Docker Container Services
                 </div>
                 <div className='itemBox'>
                     <img src={AWS} alt="Amazon Web Services"></img>
@@ -76,7 +81,7 @@ export default function Skills() {
                     GitHub
                 </div>
             </div>
-            <h3>Primary Focuses</h3>
+            <h3>Primary Development Focuses</h3>
             <div className='itemsBoxList'>
                 <ul>
                     <li><h4>API Development</h4></li>

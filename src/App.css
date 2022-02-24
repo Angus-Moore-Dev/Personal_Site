@@ -1,10 +1,9 @@
-
 button {
   width: 10vw;
 }
 
 /* Animation for all header text on load in. */
-h1, h2, h3, h4, h5, h6, p, a, button, img {
+h1, h2, h3, h4, h5, h6, p, a, button, img, #titleCard, #aboutMe, #skills, .itemsBoxList {
   animation: fadeInAnimation ease-in-out 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -29,6 +28,25 @@ h1, h2, h3, h4, h5, h6, p, a, button, img {
   background-color: #0e0e0e;
 }
 
+.HomepageItems button {
+  display: block;
+  justify-content: center;
+  align-self: center;
+
+  width: 25vw;
+  margin-left: 39vw;
+  right: 40%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#updateText {
+  margin: 2vh 18vw 2vh 18vw;
+  font-weight: lighter;
+  font-style: italic;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 #titleCard {
   background-image: url('./Media/backdrop_texture.jpg');
@@ -52,11 +70,13 @@ h1, h2, h3, h4, h5, h6, p, a, button, img {
 #aboutMe {
   background-color: black;
   padding: 2vh 12vh 2vh 12vw;
+  text-align: left;
 }
 
 #aboutMe h3 {
   font-style: italic;
   color: lightgray;
+  text-align: left; /* I don't understand why I need to call this and the ID to both have 'left' */
 }
 
 /* Fuck you I hate web design so fucking much. */
@@ -78,7 +98,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, img {
 
 
 #developerLinks h4 {
-  font-size: 20pt;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 14pt;
 }
 
 #developerLinks div:hover {
@@ -87,7 +110,7 @@ h1, h2, h3, h4, h5, h6, p, a, button, img {
 }
 
 #skills {
-  padding: 2vh 12vw 2vh 16vw;
+  padding: 2vh 16vw 2vh 16vw;
 }
 
 #skills h2 {
@@ -97,6 +120,7 @@ h1, h2, h3, h4, h5, h6, p, a, button, img {
 
 #skills h3 {
   padding-left: 2vw;
+  text-align: left;
 }
 
 .itemsBoxList {
@@ -105,7 +129,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, img {
   flex-wrap: wrap;
   margin-left: 2vw;
   margin-right: 2vw;
-  border-radius: 12px;
 }
 
 .itemBox {
@@ -122,22 +145,241 @@ h1, h2, h3, h4, h5, h6, p, a, button, img {
   color: black;
   font-size: larger;
   font-weight: bold;
+
+  transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -webkit-transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -moz-transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -o-transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -ms-transition: color .4s cubic-bezier(.4, 0, .2, 1);
 }
-
-
 
 .itemBox:hover {
   background-color: black;
   color: white;
 }
 
-
+.itemsBoxList h3 {
+  text-align: left;
+}
 
 .itemsBoxList h4 {
   font-style: italic;
   padding: 0.25vh 1vw 0.5vh 1vw;
 }
 
+.itemsBoxList ul {
+  padding-top: 2vh;
+}
+
 .itemBox img {
   width: 100px;
+}
+
+#projectLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+  margin-left: 18vw;
+  margin-right: 18vw;
+  text-align: center;
+
+  transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -webkit-transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -moz-transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -o-transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -ms-transition: color .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+#projectLink:hover {
+  background-color: lightskyblue;
+}
+
+/* Footer.jsx */
+#footer {
+  background-color: rgb(0, 0, 0);
+  height: 20vh;
+}
+
+#footer h2, h3 {
+  text-align: right;
+  padding: 4vh 4vw 2vh 0vw;
+}
+
+#footer h3 {
+  text-align: right;
+  padding: 0vh 4vw 2vh 0vw;
+  color: lightgray;
+}
+
+#footer p {
+  text-align: center;
+}
+
+/* Projects Styling Section */
+#Projects {
+  background-color: #0e0e0e;
+}
+
+#Projects h1 {
+  padding: 6vh 12vw 6vh 12vw;
+  font-size: 72pt;
+}
+
+#projectsPageBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projectContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 20px;
+  padding: 2vh 2vw 2vh 2vw;
+  text-align: left;
+  min-width: 60%;
+  margin: 0 0vw 2vh 0vw;
+
+  transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -webkit-transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -moz-transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -o-transition: color .4s cubic-bezier(.4, 0, .2, 1);
+  -ms-transition: color .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.projectContainer:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Hire Me Page */
+#hireMe {
+  background-color: #0e0e0e;
+}
+
+#hireMe h1 {
+  font-size: 72pt;
+  margin-left: 12vw;
+  filter: drop-shadow(0 1.5mm 1mm black);
+}
+
+#pageTop {
+  background-image: url("../src/Media/hireMeBackground.jpg");
+  background-position-y: 60%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+#pageTop h2 {
+  font-size: 36pt;
+  margin-left: 12vw;
+  filter: drop-shadow(0 1.5mm 1mm black);
+}
+
+#pageBody {
+  margin: 0 16vw 2vh 16vw;
+}
+
+#pageBody h3 {
+  text-align: left;
+}
+
+.workContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  background-color: #2e2e2e;
+  border: 3px solid rgba(255, 140, 0, 0.26);
+  border-radius: 20px;
+  margin-bottom: 2vh;
+  padding: 2vh 2vw 2vh 2vw;
+  min-width: 75% 1500px !important;
+}
+
+.workContainer img {
+  width: 300px;
+  height: auto;
+}
+
+.workContainer p {
+  font-size: 14pt;
+  color:lightgray;
+}
+
+.workContainer a {
+  padding: 5px 10px 5px 10px;
+}
+
+.workContainer a:hover {
+  color: darkorange;
+  background-color: black;
+}
+
+.workContainer section {
+  padding: 0vh 1vw 0vh 1vw;
+  min-width: 300px;
+}
+
+
+#angela {
+  padding: 2vh 2vw 2vh 2vw;
+}
+
+
+/* Noughts and Crosses Game */
+#noughtsAndCrosses {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#noughtsAndCrosses h2 {
+  text-align: center;
+}
+
+.row {
+  margin: 0 2vw 0 2vw;
+  background-color: black;
+}
+
+.col {
+  width: 20vh;
+  height: 20vh;
+  margin: 2.5px 2.5px 2.5px 2.5px;
+  background-color: white;
+}
+
+#resetButton {
+  margin-top: 2vh;
+}
+
+#queryBox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16vw;
+  margin-right: 16vw;
+  align-items: center;
+  
+}
+
+#queryBox form {
+  display: flex;
+  margin-bottom: 2vh;
+  flex-direction: column;
+}
+
+#queryBox input, textarea {
+  color: lightgray;
+  background-color: #0e0e0e;
+  border-radius: 2px;
+  width: 450px;
+  margin: 5px 0 5px 0;
 }
