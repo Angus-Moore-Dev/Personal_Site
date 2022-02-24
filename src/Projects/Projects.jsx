@@ -4,7 +4,7 @@ export default function Projects() {
     return (
         <div id='Projects'>
             <div id='projectsPageTop'>
-                <h1>Projects (background image needed)</h1>
+                <h1>Projects</h1>
             </div>
             <div id='projectsPageBody'>
                 <div className='projectContainer'>

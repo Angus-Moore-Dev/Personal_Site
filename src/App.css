@@ -227,6 +227,12 @@ h1, h2, h3, h4, h5, h6, p, a, button, img, #titleCard, #aboutMe, #skills, .items
   font-size: 72pt;
 }
 
+#projectsPageTop {
+  background-image: url('./Media/projectsBackground.jpg');
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
 #projectsPageBody {
   display: flex;
   flex-direction: column;
