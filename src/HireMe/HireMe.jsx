@@ -1,20 +1,10 @@
 import Footer from "../Navbar/Footer";
-import backgroundVideo from '../Media/hireMeBackground.jpg';
 import angelaLogo from '../Media/angelaLogo.png';
 import pagodaLogo from '../Media/pagodaLogo.png';
 import midasLogo from '../Media/MidasIcon.png';
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export default function HireMe() {
-
-    // Use this to generate an e-mail to me from the default e-mail handler that we use.
-    const [contactName, setContactName] = useState('');
-    const [contactEmail, setContactEmail] = useState('');
-    const [contactNumber, setContactNumber] = useState('');
-    const [contactCompany, setContactCompany] = useState('');
-    const [contactMessage, setContactMessage] = useState('');
-
     return (
         <div id='hireMe'>
             <div id='pageTop'>
@@ -28,9 +18,9 @@ export default function HireMe() {
             <div id='pageBody'>
                 <h3>
                     Previous Work
-                </h3>
+                </h3> 
                 <div className='workContainer'>
-                    <img src={pagodaLogo}></img>
+                    <img src={pagodaLogo} alt='Pagoda Technologies PTY LTD'></img>
                     <section>
                         <h2>
                             Pagoda Technologies
@@ -49,12 +39,12 @@ export default function HireMe() {
                         <p>
                             We are currently in the development stage of our first product. 
                         </p>
-                        <a href="https://www.linkedin.com/company/pagoda-tech/" target="_blank">LinkedIn</a>
+                        <a href="https://www.linkedin.com/company/pagoda-tech/" target="_blank" rel="noreferrer">LinkedIn</a>
                     </section>
                         
                 </div>
                 <div className='workContainer'>
-                    <img src={midasLogo}></img>
+                    <img src={midasLogo} alt='MidasBot'></img>
                     <section>
                         <h2>MidasBot Algorithmic Trading Bot</h2>
                         <h5>Role: Creator & Developer</h5>
@@ -89,7 +79,7 @@ export default function HireMe() {
                             They are currently taking the design work I did, alongside features and concepts I introduced forward into building
                             a fully fledged product.
                         </p>
-                        <a href="https://www.linkedin.com/company/angela-safety/" target="_blank">LinkedIn</a>
+                        <a href="https://www.linkedin.com/company/angela-safety/" target="_blank" rel="noreferrer">LinkedIn</a>
                     </section>
                 </div>
             </div>
