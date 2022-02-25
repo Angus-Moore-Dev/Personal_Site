@@ -29,7 +29,7 @@ export default function HireMe() {
                     <p>
                         Even though I am a junior and currently don't have any experience working in a big company, I will learn exceptionally fast how to 
                         blend in with a company's ethos and workflow. I really do take the extra initiative to ensure that I'm not stepping on anyone's toes and 
-                        that I'm doing trying to produce the highest quality work that I can achieve.
+                        that I'm trying to produce the highest quality work that I can achieve.
                     </p>
                 </div>
                 <h3>
