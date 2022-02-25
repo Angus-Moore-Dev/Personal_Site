@@ -228,6 +228,9 @@ h1, h2, h3, h4, h5, h6, p, a, button, img, #titleCard, #aboutMe, #skills, .items
   padding-bottom: 2vh;
   margin-bottom: 2vh;
   height: 25vh;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 #projectsPageTop h1 {
@@ -293,10 +296,13 @@ h1, h2, h3, h4, h5, h6, p, a, button, img, #titleCard, #aboutMe, #skills, .items
   padding-top: 2vh;
   padding-bottom: 2vh;
   height: 25vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
 }
 
 #pageTop h2 {
-  font-size: 36pt;
+  font-size: 18pt;
   margin-left: 12vw;
   filter: drop-shadow(0 1.5mm 1mm black);
 }
@@ -307,6 +313,24 @@ h1, h2, h3, h4, h5, h6, p, a, button, img, #titleCard, #aboutMe, #skills, .items
 
 #pageBody h3 {
   text-align: left;
+}
+
+#workRelated {
+  margin-top: 2vh;
+  background-color: #2e2e2e;
+  border: 3px solid darkorange;
+  border-radius: 20px;
+  padding: 2vh 2vw 2vh 2vw;
+}
+
+#workRelated p {
+  font-size: 18pt;
+  text-align: justify;
+}
+
+#workRelated b { /* Bold text */
+  color: darkorange;
+  font-style: italic;
 }
 
 .workContainer {

@@ -16,6 +16,22 @@ export default function HireMe() {
                 </h2> 
             </div>
             <div id='pageBody'>
+                <div id='workRelated'>
+                    <p>
+                        If you need a junior developer in Brisbane, Australia, who is skilled with Java, Spring, C#/.NET, Python, 
+                        React.JS (including hooks), cybersecurity (both code analysis and implementations) or <b>anything that is involved in programming</b>, here I am.
+                    </p>
+                    <p>
+                        Working on two startups and the freelance work I've done means that I've got a very solid grasp of all elements
+                        involved in the software development lifecycle. Things like project management, git control, database integrity and querying,
+                        systems that define the product a company is building, user authentication, logging, documentation, iterative design, I could go on...
+                    </p>
+                    <p>
+                        Even though I am a junior and currently don't have any experience working in a big company, I will learn exceptionally fast how to 
+                        blend in with a company's ethos and workflow. I really do take the extra initiative to ensure that I'm not stepping on anyone's toes and 
+                        that I'm doing trying to produce the highest quality work that I can achieve.
+                    </p>
+                </div>
                 <h3>
                     Previous Work
                 </h3> 
