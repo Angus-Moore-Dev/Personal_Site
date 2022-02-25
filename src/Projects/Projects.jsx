@@ -5,6 +5,7 @@ export default function Projects() {
         <div id='Projects'>
             <div id='projectsPageTop'>
                 <h1>Projects</h1>
+                <h2>Things that I've worked on.</h2>
             </div>
             <div id='projectsPageBody'>
                 <div className='projectContainer'>
